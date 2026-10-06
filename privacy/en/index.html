@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFF4DD">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy | Dabanggu</title>
+<style>
+:root {
+  --paper: #FFF4DD;      /* 종이 */
+  --chalk: #FFFDF5;      /* 분필 — 표와 딱지 바탕 */
+  --shade: #F1DFB8;      /* 종이 그늘 */
+  --line: #E3CFA3;       /* 공책 줄 */
+  --ink: #4A2F22;        /* 먹 — 글자와 외곽선 */
+  --ink-soft: #7A5B49;   /* 보조 글자 */
+  --mustard: #F2B632;    /* 겨자 — 강조 */
+  --mustard-wash: #FAE4B1; /* 겨자를 분필에 옅게 섞은 색 — 표 머리 */
+  --teal: #2F8F83;       /* 청록 — 장식 */
+  --teal-ink: #1E6F65;   /* 청록 글자용 */
+  --brick-ink: #8E3A2A;  /* 벽돌 글자용 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Hiragino Sans", "Yu Gothic", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 10px solid var(--mustard);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 6px solid var(--mustard);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.62em; height: 0.62em; margin-right: 0.5em;
+  border: 2px solid var(--ink); border-radius: 50%;
+  background: var(--teal);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--brick-ink); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--teal-ink); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+code {
+  background: var(--shade); color: var(--brick-ink);
+  padding: 1px 6px; border-radius: 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 2px solid var(--ink); border-radius: 10px;
+  background: var(--chalk); box-shadow: 3px 3px 0 var(--shade);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--mustard-wash); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 5px 12px;
+  border: 2px solid var(--ink); border-radius: 8px;
+  background: var(--chalk); color: var(--ink); text-decoration: none;
+}
+.langbar .on { background: var(--mustard); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--shade); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 2px solid var(--ink); border-radius: 12px;
+  background: var(--chalk); box-shadow: 4px 4px 0 var(--shade);
+  color: var(--ink); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--mustard-wash); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--ink-soft); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--line);
+  text-align: center; color: var(--ink-soft); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><span class="on">English</span><a href="../ja/" lang="ja">日本語</a><a class="hop" href="../../terms/en/">Terms of Service &rarr;</a></nav>
+<h1>Privacy Policy</h1>
+<p><strong>Dabanggu</strong> (<code>com.hasegi.dabanggu</code>)</p>
+<ul>
+<li>Effective date: October 6, 2026</li>
+<li>Last updated: October 6, 2026</li>
+</ul>
+<p>Hasegi Inc. ("we", "us", or "the Company") respects your privacy and complies with the Personal Information Protection Act of the Republic of Korea and other applicable laws. This policy explains what information Dabanggu handles and how.</p>
+<p><strong>Dabanggu is an offline, single-device game with no sign-up, no login, and no user account.</strong> We do not receive or store any information that identifies you.</p>
+<hr>
+<h2>1. Information We Handle</h2>
+<h3>1.1 Stored on your device only (never sent to us)</h3>
+<p>Dabanggu saves the following in your device's local storage (SharedPreferences) so you can pick up where you left off. <strong>This data never leaves your device and we cannot access it.</strong></p>
+<div class="tw"><table><thead><tr><th>Category</th><th>Stored items</th></tr></thead><tbody><tr><td>Progress</td><td>Stars per stage, collected stars and opened stages, number of rounds played to the end</td></tr><tr><td>Settings</td><td>Control style (floating joystick / drag to steer / tap to go) and its fine-tuning values, vibration strength, sound on or off, language, whether the first-launch rules card has been seen</td></tr><tr><td>Daily limit</td><td>Today's date, rounds played today, reward ads watched today</td></tr><tr><td>Ad pacing</td><td>Values used to keep ads spaced out, such as when an interstitial ad was last shown and how many have been shown</td></tr><tr><td>Purchase state</td><td>Whether Pro has been purchased</td></tr></tbody></table></div>
+<ul>
+<li>We never collect your name, email, phone number, date of birth, address, location, contacts, photos, or voice — <strong>no personally identifying information at all.</strong></li>
+<li>Deleting the app removes this data from your device. No backup or restore is offered.</li>
+</ul>
+<h3>1.2 Collected automatically by the advertising service</h3>
+<p>Dabanggu shows ads (reward ads and interstitial ads) through Google AdMob. During ad delivery, <strong>Google LLC collects and processes the following directly</strong>:</p>
+<ul>
+<li>Advertising identifiers (Android Advertising ID / iOS IDFA)</li>
+<li>Device information (model, OS version, language and country settings, screen information)</li>
+<li>Network information (approximate location inferred from IP address — country or region level)</li>
+<li>Ad interaction data such as impressions and clicks</li>
+</ul>
+<p>We do not collect or separately store any of the above. It is processed under the ad provider's own privacy policy.</p>
+<h3>1.3 In-app purchase processing</h3>
+<p>When you purchase "Dabanggu Pro" (product ID <code>dabanggu_pro</code>, non-consumable), payment is handled <strong>exclusively by Google Play Billing or the Apple App Store (StoreKit)</strong>.</p>
+<ul>
+<li>Card numbers and other payment credentials are handled by the store. <strong>We have no access to them.</strong></li>
+<li>The app stores only the "purchased" flag returned by the store, locally on your device.</li>
+</ul>
+<h3>1.4 What we do not collect</h3>
+<p>Dabanggu does not request the following permissions and collects no related data:</p>
+<ul>
+<li>Location (GPS), camera, microphone, contacts, photos and media storage, call or SMS logs</li>
+<li>Account information, nicknames, user-generated content such as text or drawings, chat messages</li>
+<li>Dabanggu does not include any behavioral analytics SDK.</li>
+</ul>
+<hr>
+<h2>2. Purpose of Use</h2>
+<div class="tw"><table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody><tr><td>On-device data (1.1)</td><td>Keeping your progress (stars) and settings, managing the daily limit, spacing out ads</td></tr><tr><td>Advertising identifier and device info (1.2)</td><td>Serving ads, frequency capping, personalized advertising, click-fraud prevention</td></tr><tr><td>Purchase state (1.3)</td><td>Applying the Pro benefits (no daily limit, no interstitial ads) and restoring purchases</td></tr></tbody></table></div>
+<p>We use this information for no other purpose, and we do not identify or profile individual users.</p>
+<hr>
+<h2>3. Retention Period</h2>
+<ul>
+<li><strong>On-device data</strong>: Kept on your device until you delete the app or clear its data in system settings. We hold no copy.</li>
+<li><strong>Advertising data</strong>: Retained according to Google LLC's policies (see Google's Privacy Policy).</li>
+<li><strong>Payment data</strong>: Retained according to the policies of Google and Apple and applicable law.</li>
+</ul>
+<hr>
+<h2>4. Third Parties and Processing Entrustment</h2>
+<p>We never sell or rent your information. We use the following providers' SDKs and platforms to operate the service.</p>
+<div class="tw"><table><thead><tr><th>Provider</th><th>Information involved</th><th>Purpose</th><th>Retention</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google LLC (AdMob)</td><td>Advertising identifier, device and network information, ad interactions</td><td>Ad delivery and measurement</td><td>Per provider policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr><tr><td>Google LLC (Google Play Billing)</td><td>Payment method and purchase history (handled by the store)</td><td>In-app purchase and restore</td><td>Per provider policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr><tr><td>Apple Inc. (App Store / StoreKit)</td><td>Payment method and purchase history (handled by the store)</td><td>In-app purchase and restore</td><td>Per provider policy</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></td></tr></tbody></table></div>
+<ul>
+<li>These providers operate servers outside the Republic of Korea, including in the United States, so information may be transferred overseas. The items, purposes, and retention periods are as shown above, subject to each provider's policy.</li>
+<li>We may otherwise disclose information only where required by law or pursuant to a lawful request from an investigative authority.</li>
+</ul>
+<hr>
+<h2>5. Your Rights and How to Exercise Them</h2>
+<h3>5.1 Game data</h3>
+<p>Your game data is entirely under your control. Delete the app, or clear its data in system settings, to erase all of it at any time. Deleted data cannot be recovered.</p>
+<h3>5.2 Opting out of personalized ads / resetting your advertising ID</h3>
+<ul>
+<li><strong>Android</strong>: Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization"</li>
+<li><strong>iOS</strong>: Settings → Privacy &amp; Security → Tracking → turn off "Allow Apps to Request to Track"</li>
+</ul>
+<p>On iOS 14.5 and later, the app asks for <strong>App Tracking Transparency</strong> permission before using the advertising identifier. Dabanggu turns on its advertising features only after you have answered that prompt. Declining does not restrict any game feature — you simply see non-personalized ads instead.</p>
+<h3>5.3 Pro and advertising</h3>
+<p>Purchasing "Dabanggu Pro" removes the daily limit and stops interstitial ads from appearing. Reward ads are shown only when a player who has used up the daily limit chooses to watch one for an extra round, so Pro players, who have no limit, do not need them. Whether or not you purchase Pro, you can opt out of personalized ads as described in 5.2.</p>
+<h3>5.4 Children's privacy</h3>
+<ul>
+<li>Dabanggu is <strong>not directed to children under 13.</strong> Its Google Play target age is declared as 13+ only, and it does not participate in the Families program.</li>
+<li>Ad requests are configured without the child-directed treatment tag (<code>tagForChildDirectedTreatment</code>), and ad content is restricted to the "G" (General audiences) rating.</li>
+<li>We do not knowingly collect personal information from children under 14 without the consent of a legal guardian. If we learn that such information has been collected, we delete it without delay.</li>
+</ul>
+<h3>5.5 Contact</h3>
+<p>You may request access, correction, deletion, or suspension of processing at any time through [Settings] → [About] → [Contact us] in the app, or by email below. We respond within 10 days of receipt.</p>
+<hr>
+<h2>6. Security Measures</h2>
+<ul>
+<li><strong>Data minimization</strong>: We do not collect information that is not essential to the service. Game data stays on your device and is never transmitted to a server of ours.</li>
+<li><strong>Transport protection</strong>: External communication for ads and payments uses the encrypted (HTTPS/TLS) channels provided by each SDK.</li>
+<li><strong>Access control</strong>: Because we hold no user-identifying data, we operate no user database.</li>
+<li><strong>Maintenance</strong>: We keep the SDKs we depend on up to date with their security releases.</li>
+</ul>
+<hr>
+<h2>7. Privacy Officer</h2>
+<ul>
+<li>Contact — Hasegi Inc. · Development</li>
+<li>Email — hasegi.cs@gmail.com</li>
+</ul>
+<p>Please direct any privacy inquiries, complaints, or remedy requests to the address above.</p>
+<hr>
+<h2>8. Remedies for Infringement of Rights</h2>
+<p>If you need to report or consult about a privacy violation, you may contact the following Korean authorities. The phone numbers are dialed without an area code from within Korea.</p>
+<div class="tw"><table><thead><tr><th>Authority</th><th>Phone</th><th>Website</th></tr></thead><tbody><tr><td>Personal Information Dispute Mediation Committee</td><td>1833-6972</td><td>kopico.go.kr</td></tr><tr><td>Privacy Infringement Report Center (KISA)</td><td>118</td><td>privacy.kisa.or.kr</td></tr><tr><td>Supreme Prosecutors' Office, Cybercrime Investigation</td><td>1301</td><td>spo.go.kr</td></tr><tr><td>National Police Agency, Cyber Bureau</td><td>182</td><td>ecrm.cyber.go.kr</td></tr></tbody></table></div>
+<hr>
+<h2>9. Changes to This Policy</h2>
+<p>This policy may be revised to reflect changes in law, policy, or the service. We will post the revision and its effective date on this page. Material changes that are unfavorable to users will be announced at least 7 days before they take effect.</p>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+Development &middot; Contact <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>

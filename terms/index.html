@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFF4DD">
+<meta name="robots" content="index, follow">
+<title>이용약관 | 다방구</title>
+<style>
+:root {
+  --paper: #FFF4DD;      /* 종이 */
+  --chalk: #FFFDF5;      /* 분필 — 표와 딱지 바탕 */
+  --shade: #F1DFB8;      /* 종이 그늘 */
+  --line: #E3CFA3;       /* 공책 줄 */
+  --ink: #4A2F22;        /* 먹 — 글자와 외곽선 */
+  --ink-soft: #7A5B49;   /* 보조 글자 */
+  --mustard: #F2B632;    /* 겨자 — 강조 */
+  --mustard-wash: #FAE4B1; /* 겨자를 분필에 옅게 섞은 색 — 표 머리 */
+  --teal: #2F8F83;       /* 청록 — 장식 */
+  --teal-ink: #1E6F65;   /* 청록 글자용 */
+  --brick-ink: #8E3A2A;  /* 벽돌 글자용 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Hiragino Sans", "Yu Gothic", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 10px solid var(--mustard);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 6px solid var(--mustard);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.62em; height: 0.62em; margin-right: 0.5em;
+  border: 2px solid var(--ink); border-radius: 50%;
+  background: var(--teal);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--brick-ink); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--teal-ink); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+code {
+  background: var(--shade); color: var(--brick-ink);
+  padding: 1px 6px; border-radius: 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 2px solid var(--ink); border-radius: 10px;
+  background: var(--chalk); box-shadow: 3px 3px 0 var(--shade);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--mustard-wash); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 5px 12px;
+  border: 2px solid var(--ink); border-radius: 8px;
+  background: var(--chalk); color: var(--ink); text-decoration: none;
+}
+.langbar .on { background: var(--mustard); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--shade); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 2px solid var(--ink); border-radius: 12px;
+  background: var(--chalk); box-shadow: 4px 4px 0 var(--shade);
+  color: var(--ink); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--mustard-wash); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--ink-soft); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--line);
+  text-align: center; color: var(--ink-soft); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><span class="on">한국어</span><a href="en/" lang="en">English</a><a href="ja/" lang="ja">日本語</a><a class="hop" href="../privacy/">개인정보 처리방침 &rarr;</a></nav>
+<h1>이용약관</h1>
+<p><strong>다방구</strong> (<code>com.hasegi.dabanggu</code>)</p>
+<ul>
+<li>시행일: 2026년 10월 6일</li>
+<li>최종 개정일: 2026년 10월 6일</li>
+</ul>
+<hr>
+<h2>제1조 (목적)</h2>
+<p>본 약관은 Hasegi Inc.(이하 "회사")가 제공하는 모바일 게임 애플리케이션 "다방구"(이하 "게임")의 이용과 관련하여 회사와 이용자 간의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+<h2>제2조 (용어의 정의)</h2>
+<ol>
+<li><strong>게임</strong> — 회사가 Google Play 및 Apple App Store를 통해 배포하는 모바일 애플리케이션 "다방구"를 말합니다.</li>
+<li><strong>이용자</strong> — 게임을 설치하여 이용하는 모든 자를 말합니다. 게임은 별도의 회원가입이나 계정 생성을 요구하지 않습니다.</li>
+<li><strong>게임 데이터</strong> — 스테이지별 별, 모은 별과 연 스테이지, 설정, 하루 한도 사용 내역, 구매 상태 등 이용자의 플레이 결과로 생성되어 <strong>이용자 기기 내부에만 저장되는 정보</strong>를 말합니다.</li>
+<li><strong>하루 한도</strong> — 하루에 무료로 할 수 있는 판의 수를 말합니다. 기기의 날짜가 바뀌면 다시 채워집니다.</li>
+<li><strong>인앱 상품</strong> — 게임 내에서 각 스토어의 결제 시스템을 통해 구매할 수 있는 유료 상품을 말합니다.</li>
+<li><strong>보상형 광고</strong> — 이용자가 스스로 선택하여 시청하고 그 대가로 그날 할 수 있는 판을 더 받는 광고를 말합니다.</li>
+</ol>
+<h2>제3조 (약관의 효력 및 변경)</h2>
+<ol>
+<li>본 약관은 게임을 설치·이용하는 모든 이용자에게 효력이 발생합니다.</li>
+<li>회사는 관련 법령을 위반하지 않는 범위에서 본 약관을 개정할 수 있습니다.</li>
+<li>개정 시 본 페이지에 개정 내용과 시행일을 공지하며, 이용자에게 불리한 중요한 변경은 시행 7일 전부터 공지합니다.</li>
+<li>개정 약관의 시행일 이후에도 게임을 계속 이용하는 경우 개정 약관에 동의한 것으로 봅니다. 동의하지 않는 경우 게임 이용을 중단하고 앱을 삭제할 수 있습니다.</li>
+</ol>
+<h2>제4조 (서비스의 제공)</h2>
+<ol>
+<li>회사는 게임을 통해 다음의 콘텐츠를 제공합니다.
+<ul>
+<li>골목 놀이 「다방구」를 바탕으로 한 술래잡기: 도망자 여섯~여덟(이용자와 동료)이 술래 둘~셋을 피해 다니고, 전봇대에 묶인 친구를 풀어 주는 한 판(약 2분)</li>
+<li>스테이지 12판(마당 셋에 네 단계씩). 앞 판을 끝내고 모은 별을 써서 다음 판을 차례로 여는 진행</li>
+<li>세 가지 조작 방식(떠 있는 조이스틱 / 끌어서 방향 잡기 / 누른 곳으로 가기) 가운데 고르기</li>
+</ul>
+</li>
+<li>게임은 무료로 내려받을 수 있으며, 하루에 무료로 할 수 있는 판 수에는 한도(하루 한도)가 있습니다. 시행일 기준으로 하루 8판이며, 보상형 광고를 한 번 끝까지 볼 때마다 1판을 더 할 수 있습니다(하루 3회까지). 인앱 상품 '다방구 Pro'를 구매하면 한도 없이 할 수 있습니다. 남은 판 수는 게임 화면에 표시되며, 이 수치는 제5조에 따라 바뀔 수 있습니다.</li>
+<li>게임은 <strong>네트워크 연결 없이도 플레이할 수 있는 오프라인 게임</strong>입니다. 다만 광고 표시와 인앱 결제·구매 복원에는 인터넷 연결이 필요합니다.</li>
+<li>게임은 회원 계정, 랭킹 서버, 클라우드 저장, 이용자 간 채팅·대전 기능을 제공하지 않습니다.</li>
+</ol>
+<h2>제5조 (서비스의 변경 및 중단)</h2>
+<ol>
+<li>회사는 게임의 기획·운영상 필요에 따라 콘텐츠, 스테이지 구성, 난이도, 하루 한도와 보상형 광고로 더 받는 판 수 등을 변경할 수 있습니다.</li>
+<li>회사는 다음의 경우 게임의 제공을 전부 또는 일부 중단할 수 있습니다.
+<ul>
+<li>서비스 운영상 상당한 이유가 있는 경우</li>
+<li>관련 법령 또는 스토어 정책의 변경이 있는 경우</li>
+<li>천재지변, 스토어·광고·결제 사업자의 장애 등 불가항력적 사유가 있는 경우</li>
+</ul>
+</li>
+<li>서비스를 영구 종료하는 경우 회사는 스토어 등록정보 또는 본 페이지를 통해 종료 예정일을 사전에 공지합니다.</li>
+</ol>
+<h2>제6조 (게임 데이터에 관한 면책)</h2>
+<ol>
+<li>게임 데이터는 <strong>이용자의 기기 내부에만 저장</strong>되며, 회사의 서버에 백업되지 않습니다.</li>
+<li>다음 사유로 발생한 게임 데이터의 소실에 대해 회사는 복구 의무를 지지 않습니다.
+<ul>
+<li>앱 삭제, 기기 설정에서의 앱 데이터·캐시 삭제</li>
+<li>기기의 분실·고장·초기화, 기기 교체</li>
+<li>운영체제 재설치, 저장 공간 부족, 기기 이전 도구의 미지원</li>
+</ul>
+</li>
+<li>이용자는 게임 데이터가 기기 종속적임을 이해하고 게임을 이용합니다. 하루 한도는 기기의 날짜를 기준으로 계산됩니다.</li>
+<li>게임 내 별과 기록은 게임 진행의 재미를 위한 것이며, 그 수치의 정확성이나 특정 결과를 보장하지 않습니다.</li>
+</ol>
+<h2>제7조 (광고)</h2>
+<ol>
+<li>게임은 무료로 제공되며 광고 수익과 인앱 상품 판매로 운영됩니다.</li>
+<li>게임에 게재되는 광고는 다음 두 가지입니다.
+<ul>
+<li><strong>전면 광고</strong> — 한 판이 끝난 뒤 다음 화면으로 넘어가는 시점에만 표시되며, 표시 간격과 횟수에 상한이 적용됩니다. 판을 하는 도중에는 표시되지 않습니다. '다방구 Pro'를 구매하면 표시되지 않습니다.</li>
+<li><strong>보상형 광고</strong> — 하루 한도를 다 쓴 이용자가 판을 더 받으려고 직접 광고 보기를 선택했을 때에만 표시됩니다.</li>
+</ul>
+</li>
+<li>광고 콘텐츠는 광고 사업자가 제공하며, 광고에 포함된 상품·서비스에 관한 사항은 해당 광고주와 이용자 간의 거래입니다. 회사는 광고 콘텐츠의 내용에 대해 책임을 지지 않습니다. 다만 회사는 광고 콘텐츠 등급을 전체 이용가(G)로 제한하도록 설정합니다.</li>
+</ol>
+<h2>제8조 (인앱 상품 및 환불)</h2>
+<p>게임은 다음 인앱 상품을 제공합니다.</p>
+<div class="tw"><table><thead><tr><th>상품 ID</th><th>상품명</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td><code>dabanggu_pro</code></td><td>다방구 Pro</td><td>비소모성</td><td>하루 한도 없이 무제한으로 할 수 있고, 전면 광고가 표시되지 않습니다.</td></tr></tbody></table></div>
+<ol>
+<li>결제는 Google Play 결제 시스템 또는 Apple App Store 결제 시스템을 통해 이루어지며, 결제 수단 정보는 각 스토어가 처리합니다.</li>
+<li><strong>환불은 각 스토어의 환불 정책과 절차에 따릅니다.</strong> Google Play 고객센터 또는 Apple '문제 신고' 페이지를 통해 신청하시기 바랍니다. 회사는 스토어를 대신하여 결제를 취소하거나 환불할 권한이 없습니다.</li>
+<li>비소모성 상품은 동일한 스토어 계정으로 [설정] → [구매 복원]을 통해 재설치 후에도 복원할 수 있습니다.</li>
+<li>구매 내역은 구매한 스토어 계정에 연결됩니다. Google Play에서 구매한 상품을 App Store에서, 또는 그 반대로 복원할 수는 없습니다.</li>
+</ol>
+<h2>제9조 (이용자의 의무)</h2>
+<p>이용자는 다음 행위를 하여서는 안 됩니다.</p>
+<ol>
+<li>게임의 프로그램을 역설계·디컴파일·수정하거나, 메모리 변조·자동화 도구 등 비정상적인 방법으로 게임 데이터나 하루 한도를 조작하는 행위</li>
+<li>게임 또는 광고·결제 시스템의 정상적인 작동을 방해하거나 부정한 이익을 취하는 행위</li>
+<li>회사의 지식재산권 또는 제3자의 권리를 침해하는 행위</li>
+<li>관련 법령에 위반되는 행위</li>
+</ol>
+<p>위 행위로 인해 게임 데이터가 손상되거나 정상적으로 동작하지 않는 경우 회사는 책임을 지지 않으며, 관련 법령에 따른 조치를 취할 수 있습니다.</p>
+<h2>제10조 (지식재산권)</h2>
+<ol>
+<li>게임에 포함된 캐릭터, 그래픽, 음악, 효과음, 텍스트, 코드 등 일체의 콘텐츠에 대한 저작권 및 지식재산권은 회사 또는 정당한 권리자에게 귀속됩니다.</li>
+<li>이용자는 게임을 개인적·비상업적 목적으로 이용할 수 있는 권리를 부여받을 뿐이며, 회사의 사전 서면 동의 없이 콘텐츠를 복제·배포·전송·개작·판매할 수 없습니다.</li>
+<li>게임 플레이 장면의 개인적인 촬영·스트리밍·업로드는 비상업적 범위에서 허용됩니다.</li>
+<li>게임에 사용된 오픈소스 소프트웨어와 글꼴(Pretendard JP, 주아 — SIL Open Font License 1.1)의 라이선스 전문은 [설정] → [정보] → [오픈소스 라이선스]에서 확인할 수 있습니다.</li>
+</ol>
+<h2>제11조 (분쟁의 해결)</h2>
+<ol>
+<li>본 약관은 대한민국 법률에 따라 해석되고 적용됩니다.</li>
+<li>회사와 이용자 간에 분쟁이 발생한 경우 양 당사자는 신의성실의 원칙에 따라 원만한 해결을 위해 노력합니다.</li>
+<li>협의로 해결되지 않는 분쟁의 관할 법원은 「민사소송법」에 따라 정합니다.</li>
+</ol>
+<h2>제12조 (문의)</h2>
+<p>게임 이용과 관련한 문의는 앱 내 [설정] → [정보] → [문의하기] 또는 아래 이메일로 접수해 주시기 바랍니다.</p>
+<ul>
+<li>이메일 — hasegi.cs@gmail.com</li>
+<li>운영자 — Hasegi Inc. · 개발팀</li>
+</ul>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+개발팀 &middot; 문의 <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>

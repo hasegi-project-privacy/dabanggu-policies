@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFF4DD">
+<meta name="robots" content="index, follow">
+<title>利用規約 | ダバング</title>
+<style>
+:root {
+  --paper: #FFF4DD;      /* 종이 */
+  --chalk: #FFFDF5;      /* 분필 — 표와 딱지 바탕 */
+  --shade: #F1DFB8;      /* 종이 그늘 */
+  --line: #E3CFA3;       /* 공책 줄 */
+  --ink: #4A2F22;        /* 먹 — 글자와 외곽선 */
+  --ink-soft: #7A5B49;   /* 보조 글자 */
+  --mustard: #F2B632;    /* 겨자 — 강조 */
+  --mustard-wash: #FAE4B1; /* 겨자를 분필에 옅게 섞은 색 — 표 머리 */
+  --teal: #2F8F83;       /* 청록 — 장식 */
+  --teal-ink: #1E6F65;   /* 청록 글자용 */
+  --brick-ink: #8E3A2A;  /* 벽돌 글자용 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Hiragino Sans", "Yu Gothic", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 10px solid var(--mustard);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 6px solid var(--mustard);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.62em; height: 0.62em; margin-right: 0.5em;
+  border: 2px solid var(--ink); border-radius: 50%;
+  background: var(--teal);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--brick-ink); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--teal-ink); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+code {
+  background: var(--shade); color: var(--brick-ink);
+  padding: 1px 6px; border-radius: 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 2px solid var(--ink); border-radius: 10px;
+  background: var(--chalk); box-shadow: 3px 3px 0 var(--shade);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--mustard-wash); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 5px 12px;
+  border: 2px solid var(--ink); border-radius: 8px;
+  background: var(--chalk); color: var(--ink); text-decoration: none;
+}
+.langbar .on { background: var(--mustard); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--shade); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 2px solid var(--ink); border-radius: 12px;
+  background: var(--chalk); box-shadow: 4px 4px 0 var(--shade);
+  color: var(--ink); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--mustard-wash); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--ink-soft); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--line);
+  text-align: center; color: var(--ink-soft); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><a href="../en/" lang="en">English</a><span class="on">日本語</span><a class="hop" href="../../privacy/ja/">プライバシーポリシー &rarr;</a></nav>
+<h1>利用規約</h1>
+<p><strong>ダバング</strong> (<code>com.hasegi.dabanggu</code>)</p>
+<ul>
+<li>施行日: 2026年10月6日</li>
+<li>最終改定日: 2026年10月6日</li>
+</ul>
+<hr>
+<h2>第1条（目的）</h2>
+<p>本規約は、Hasegi Inc.（以下「当社」）が提供するモバイルゲームアプリケーション「ダバング」（以下「本ゲーム」）の利用に関して、当社と利用者との間の権利・義務および責任事項を定めることを目的とします。</p>
+<h2>第2条（用語の定義）</h2>
+<ol>
+<li><strong>本ゲーム</strong> — 当社が Google Play および Apple App Store を通じて配信するモバイルアプリケーション「ダバング」をいいます。</li>
+<li><strong>利用者</strong> — 本ゲームをインストールして利用するすべての方をいいます。本ゲームは会員登録やアカウント作成を必要としません。</li>
+<li><strong>ゲームデータ</strong> — ステージごとの星、集めた星と開いたステージ、設定、1日の上限の利用状況、購入状態など、利用者のプレイによって生成され <strong>利用者の端末内にのみ保存される情報</strong> をいいます。</li>
+<li><strong>1日の上限</strong> — 1日に無料で遊べる回数をいいます。端末の日付が変わると元に戻ります。</li>
+<li><strong>アプリ内商品</strong> — 本ゲーム内で各ストアの課金システムを通じて購入できる有料商品をいいます。</li>
+<li><strong>リワード広告</strong> — 利用者が自ら選択して視聴し、その対価としてその日に遊べる回数を追加で受け取る広告をいいます。</li>
+</ol>
+<h2>第3条（規約の効力および変更）</h2>
+<ol>
+<li>本規約は、本ゲームをインストールして利用するすべての利用者に効力が生じます。</li>
+<li>当社は、関連法令に違反しない範囲で本規約を改定することができます。</li>
+<li>改定の際は本ページに改定内容と施行日を掲示し、利用者に不利な重要な変更については施行の 7 日前から告知します。</li>
+<li>改定規約の施行日以降も本ゲームの利用を継続した場合、改定規約に同意したものとみなします。同意されない場合は、本ゲームの利用を中止しアプリを削除することができます。</li>
+</ol>
+<h2>第4条（サービスの提供）</h2>
+<ol>
+<li>当社は本ゲームを通じて次のコンテンツを提供します。
+<ul>
+<li>韓国の路地遊び「ダバング」をもとにした鬼ごっこ: 逃げる 6〜8 人（利用者と仲間）が 2〜3 人の鬼をかわし、電柱につながれた仲間を助け出す 1 回約 2 分のプレイ</li>
+<li>12 ステージ（3 つの広場に 4 段階ずつ）。前のステージをクリアし、集めた星を使って次のステージを順に開く進行</li>
+<li>3 種類の操作方式（フローティングスティック／ドラッグで方向決め／タップした場所へ移動）からの選択</li>
+</ul>
+</li>
+<li>本ゲームは無料でダウンロードでき、1日に無料で遊べる回数には上限（1日の上限）があります。施行日時点では 1日 8 回で、リワード広告を 1 回最後まで視聴するごとに 1 回分が追加されます（1日 3 回まで）。アプリ内商品「ダバング Pro」を購入すると、上限なく遊べます。残りの回数はゲーム画面に表示され、これらの数値は第5条に従って変更されることがあります。</li>
+<li>本ゲームは <strong>ネットワーク接続がなくてもプレイできるオフラインゲーム</strong> です。ただし、広告の表示およびアプリ内課金・購入の復元にはインターネット接続が必要です。</li>
+<li>本ゲームは、アカウント、ランキングサーバー、クラウドセーブ、利用者同士のチャット・対戦機能を提供していません。</li>
+</ol>
+<h2>第5条（サービスの変更および中断）</h2>
+<ol>
+<li>当社は、企画・運営上の必要に応じて、コンテンツ、ステージ構成、難易度、1日の上限、リワード広告で追加される回数などを変更することができます。</li>
+<li>当社は次の場合、本ゲームの提供の全部または一部を中断することができます。
+<ul>
+<li>サービス運営上の相当な理由がある場合</li>
+<li>関連法令またはストアの方針が変更された場合</li>
+<li>天災地変、ストア・広告・決済事業者の障害など不可抗力の事由がある場合</li>
+</ul>
+</li>
+<li>サービスを恒久的に終了する場合、当社はストアの掲載情報または本ページを通じて終了予定日を事前に告知します。</li>
+</ol>
+<h2>第6条（ゲームデータに関する免責）</h2>
+<ol>
+<li>ゲームデータは <strong>利用者の端末内にのみ保存</strong> され、当社のサーバーにバックアップされることはありません。</li>
+<li>次の事由により発生したゲームデータの消失について、当社は復元の義務を負いません。
+<ul>
+<li>アプリの削除、端末設定でのアプリデータ・キャッシュの削除</li>
+<li>端末の紛失・故障・初期化、端末の買い替え</li>
+<li>OS の再インストール、ストレージ不足、端末移行ツールの非対応</li>
+</ul>
+</li>
+<li>利用者は、ゲームデータが端末に依存することを理解したうえで本ゲームを利用するものとします。1日の上限は端末の日付を基準に数えます。</li>
+<li>ゲーム内の星や記録はプレイを楽しむためのものであり、当社はその数値の正確性や特定の結果を保証しません。</li>
+</ol>
+<h2>第7条（広告）</h2>
+<ol>
+<li>本ゲームは無料で提供され、広告収益とアプリ内商品の販売によって運営されます。</li>
+<li>本ゲームに掲載される広告は次の 2 種類です。
+<ul>
+<li><strong>全画面広告</strong> — 1 回のプレイが終わって次の画面へ移るときにのみ表示され、表示の間隔と回数に上限が適用されます。プレイの途中には表示されません。「ダバング Pro」を購入すると表示されなくなります。</li>
+<li><strong>リワード広告</strong> — 1日の上限を使い切った利用者が、追加で遊ぶために自ら広告の視聴を選択したときにのみ表示されます。</li>
+</ul>
+</li>
+<li>広告コンテンツは広告事業者が提供するものであり、広告に含まれる商品・サービスに関する事項は当該広告主と利用者との間の取引です。当社は広告コンテンツの内容について責任を負いません。ただし当社は、広告コンテンツのレーティングを全年齢向け（G）に制限する設定としています。</li>
+</ol>
+<h2>第8条（アプリ内商品および返金）</h2>
+<p>本ゲームは次のアプリ内商品を提供します。</p>
+<div class="tw"><table><thead><tr><th>商品 ID</th><th>商品名</th><th>種別</th><th>内容</th></tr></thead><tbody><tr><td><code>dabanggu_pro</code></td><td>ダバング Pro</td><td>非消費型</td><td>1日の上限なく遊べるようになり、全画面広告が表示されなくなります。</td></tr></tbody></table></div>
+<ol>
+<li>決済は Google Play の課金システムまたは Apple App Store の決済システムを通じて行われ、決済手段の情報は各ストアが処理します。</li>
+<li><strong>返金は各ストアの返金ポリシーおよび手続きに従います。</strong> Google Play ヘルプまたは Apple の「問題を報告」ページからお申し込みください。当社にはストアに代わって決済を取り消したり返金したりする権限はありません。</li>
+<li>非消費型商品は、同一のストアアカウントで［設定］→［購入を復元］から、再インストール後も復元できます。</li>
+<li>購入は、購入したストアアカウントに紐づきます。Google Play で購入した商品を App Store で復元すること、またはその逆はできません。</li>
+</ol>
+<h2>第9条（利用者の義務）</h2>
+<p>利用者は次の行為を行ってはなりません。</p>
+<ol>
+<li>本ゲームのプログラムをリバースエンジニアリング・逆コンパイル・改変すること、またはメモリ改変・自動化ツールなど正常でない方法でゲームデータや 1日の上限を操作すること</li>
+<li>本ゲームまたは広告・決済システムの正常な動作を妨害すること、もしくは不正な利益を得ること</li>
+<li>当社の知的財産権または第三者の権利を侵害すること</li>
+<li>関連法令に違反すること</li>
+</ol>
+<p>上記の行為によりゲームデータが破損し、または正常に動作しなくなった場合、当社は責任を負わず、関連法令に基づく措置をとることがあります。</p>
+<h2>第10条（知的財産権）</h2>
+<ol>
+<li>本ゲームに含まれるキャラクター、グラフィック、音楽、効果音、テキスト、コードなど一切のコンテンツに関する著作権および知的財産権は、当社または正当な権利者に帰属します。</li>
+<li>利用者は本ゲームを個人的・非商業的な目的で利用する権利を付与されるにとどまり、当社の事前の書面による同意なくコンテンツを複製・配布・送信・翻案・販売することはできません。</li>
+<li>プレイ映像の個人的な撮影・配信・アップロードは、非商業的な範囲で許可されます。</li>
+<li>本ゲームで使用しているオープンソースソフトウェアおよびフォント（Pretendard JP、Jua — SIL Open Font License 1.1）のライセンス全文は、［設定］→［情報］→［オープンソースライセンス］でご確認いただけます。</li>
+</ol>
+<h2>第11条（紛争の解決）</h2>
+<ol>
+<li>本規約は大韓民国の法律に従って解釈・適用されます。</li>
+<li>当社と利用者との間に紛争が生じた場合、両当事者は信義誠実の原則に従い円満な解決に努めます。</li>
+<li>協議によって解決しない紛争の管轄裁判所は、大韓民国「民事訴訟法」に従って定めます。</li>
+</ol>
+<h2>第12条（お問い合わせ）</h2>
+<p>本ゲームの利用に関するお問い合わせは、アプリ内の［設定］→［情報］→［お問い合わせ］、または下記のメールアドレスまでお願いいたします。</p>
+<ul>
+<li>メール — hasegi.cs@gmail.com</li>
+<li>運営者 — Hasegi Inc. · 開発チーム</li>
+</ul>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+開発チーム &middot; お問い合わせ <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
