@@ -125,13 +125,13 @@ footer {
 <h2>1. Information We Handle</h2>
 <h3>1.1 Stored on your device only (never sent to us)</h3>
 <p>Dabanggu saves the following in your device's local storage (SharedPreferences) so you can pick up where you left off. <strong>This data never leaves your device and we cannot access it.</strong></p>
-<div class="tw"><table><thead><tr><th>Category</th><th>Stored items</th></tr></thead><tbody><tr><td>Progress</td><td>Stars per stage, collected stars and opened stages, number of rounds played to the end</td></tr><tr><td>Settings</td><td>Control style (floating joystick / drag to steer / tap to go) and its fine-tuning values, vibration strength, sound on or off, language, whether the first-launch rules card has been seen</td></tr><tr><td>Daily limit</td><td>Today's date, rounds played today, reward ads watched today</td></tr><tr><td>Ad pacing</td><td>Values used to keep ads spaced out, such as when an interstitial ad was last shown and how many have been shown</td></tr><tr><td>Purchase state</td><td>Whether Pro has been purchased</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Category</th><th>Stored items</th></tr></thead><tbody><tr><td>Progress</td><td>Stars per stage, collected stars and opened stages, number of rounds played to the end</td></tr><tr><td>Settings</td><td>Control style (floating joystick / drag to steer / tap to go) and its fine-tuning values, vibration strength, sound on or off, language, whether the first-launch rules card has been seen</td></tr><tr><td>Ad pacing</td><td>Values used to keep ads spaced out, such as when an interstitial ad or an app open ad was last shown and how many have been shown</td></tr></tbody></table></div>
 <ul>
 <li>We never collect your name, email, phone number, date of birth, address, location, contacts, photos, or voice — <strong>no personally identifying information at all.</strong></li>
 <li>Deleting the app removes this data from your device. No backup or restore is offered.</li>
 </ul>
 <h3>1.2 Collected automatically by the advertising service</h3>
-<p>Dabanggu shows ads (reward ads and interstitial ads) through Google AdMob. During ad delivery, <strong>Google LLC collects and processes the following directly</strong>:</p>
+<p>Dabanggu shows ads (interstitial ads, app open ads, reward ads, and banner ads) through Google AdMob. During ad delivery, <strong>Google LLC collects and processes the following directly</strong>:</p>
 <ul>
 <li>Advertising identifiers (Android Advertising ID / iOS IDFA)</li>
 <li>Device information (model, OS version, language and country settings, screen information)</li>
@@ -140,10 +140,10 @@ footer {
 </ul>
 <p>We do not collect or separately store any of the above. It is processed under the ad provider's own privacy policy.</p>
 <h3>1.3 In-app purchase processing</h3>
-<p>When you purchase "Dabanggu Pro" (product ID <code>dabanggu_pro</code>, non-consumable), payment is handled <strong>exclusively by Google Play Billing or the Apple App Store (StoreKit)</strong>.</p>
+<p>Dabanggu <strong>currently sells no paid in-app products</strong> and handles no payment-related information.</p>
 <ul>
-<li>Card numbers and other payment credentials are handled by the store. <strong>We have no access to them.</strong></li>
-<li>The app stores only the "purchased" flag returned by the store, locally on your device.</li>
+<li>If in-app products are added in the future, payment will be handled <strong>exclusively by Google Play Billing or the Apple App Store (StoreKit)</strong>. Card numbers and other payment credentials would be handled by the store, and we would have no access to them.</li>
+<li>We will revise this policy and give notice before that happens.</li>
 </ul>
 <h3>1.4 What we do not collect</h3>
 <p>Dabanggu does not request the following permissions and collects no related data:</p>
@@ -154,21 +154,20 @@ footer {
 </ul>
 <hr>
 <h2>2. Purpose of Use</h2>
-<div class="tw"><table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody><tr><td>On-device data (1.1)</td><td>Keeping your progress (stars) and settings, managing the daily limit, spacing out ads</td></tr><tr><td>Advertising identifier and device info (1.2)</td><td>Serving ads, frequency capping, personalized advertising, click-fraud prevention</td></tr><tr><td>Purchase state (1.3)</td><td>Applying the Pro benefits (no daily limit, no interstitial ads) and restoring purchases</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody><tr><td>On-device data (1.1)</td><td>Keeping your progress (stars) and settings, spacing out ads</td></tr><tr><td>Advertising identifier and device info (1.2)</td><td>Serving ads, frequency capping, personalized advertising, click-fraud prevention</td></tr></tbody></table></div>
 <p>We use this information for no other purpose, and we do not identify or profile individual users.</p>
 <hr>
 <h2>3. Retention Period</h2>
 <ul>
 <li><strong>On-device data</strong>: Kept on your device until you delete the app or clear its data in system settings. We hold no copy.</li>
 <li><strong>Advertising data</strong>: Retained according to Google LLC's policies (see Google's Privacy Policy).</li>
-<li><strong>Payment data</strong>: Retained according to the policies of Google and Apple and applicable law.</li>
 </ul>
 <hr>
 <h2>4. Third Parties and Processing Entrustment</h2>
-<p>We never sell or rent your information. We use the following providers' SDKs and platforms to operate the service.</p>
-<div class="tw"><table><thead><tr><th>Provider</th><th>Information involved</th><th>Purpose</th><th>Retention</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google LLC (AdMob)</td><td>Advertising identifier, device and network information, ad interactions</td><td>Ad delivery and measurement</td><td>Per provider policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr><tr><td>Google LLC (Google Play Billing)</td><td>Payment method and purchase history (handled by the store)</td><td>In-app purchase and restore</td><td>Per provider policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr><tr><td>Apple Inc. (App Store / StoreKit)</td><td>Payment method and purchase history (handled by the store)</td><td>In-app purchase and restore</td><td>Per provider policy</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></td></tr></tbody></table></div>
+<p>We never sell or rent your information. We use the following provider's SDK to operate the service.</p>
+<div class="tw"><table><thead><tr><th>Provider</th><th>Information involved</th><th>Purpose</th><th>Retention</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google LLC (AdMob)</td><td>Advertising identifier, device and network information, ad interactions</td><td>Ad delivery and measurement</td><td>Per provider policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr></tbody></table></div>
 <ul>
-<li>These providers operate servers outside the Republic of Korea, including in the United States, so information may be transferred overseas. The items, purposes, and retention periods are as shown above, subject to each provider's policy.</li>
+<li>The advertising provider operates servers outside the Republic of Korea, including in the United States, so information may be transferred overseas. The items, purposes, and retention periods are as shown above, subject to the provider's policy.</li>
 <li>We may otherwise disclose information only where required by law or pursuant to a lawful request from an investigative authority.</li>
 </ul>
 <hr>
@@ -180,9 +179,9 @@ footer {
 <li><strong>Android</strong>: Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization"</li>
 <li><strong>iOS</strong>: Settings → Privacy &amp; Security → Tracking → turn off "Allow Apps to Request to Track"</li>
 </ul>
-<p>On iOS 14.5 and later, the app asks for <strong>App Tracking Transparency</strong> permission before using the advertising identifier. Dabanggu turns on its advertising features only after you have answered that prompt. Declining does not restrict any game feature — you simply see non-personalized ads instead.</p>
-<h3>5.3 Pro and advertising</h3>
-<p>Purchasing "Dabanggu Pro" removes the daily limit and stops interstitial ads from appearing. Reward ads are shown only when a player who has used up the daily limit chooses to watch one for an extra round, so Pro players, who have no limit, do not need them. Whether or not you purchase Pro, you can opt out of personalized ads as described in 5.2.</p>
+<p>On iOS 14.5 and later, the app asks for <strong>App Tracking Transparency</strong> permission before using the advertising identifier. Dabanggu turns on its advertising features only after you have answered that prompt (this includes the app open ad shown on launch). Declining does not restrict any game feature — you simply see non-personalized ads instead.</p>
+<h3>5.3 Ads and your choices</h3>
+<p>Reward ads are shown only when every runner has been caught, the round is lost, and you actively choose "Watch an ad to continue". If you do not choose it, no reward ad is shown. Where and how often interstitial ads, app open ads, and banner ads appear is set out in Article 7 of the Terms of Service. Dabanggu does not currently sell any paid product that removes ads. For every kind of ad, you can opt out of personalized ads as described in 5.2.</p>
 <h3>5.4 Children's privacy</h3>
 <ul>
 <li>Dabanggu is <strong>not directed to children under 13.</strong> Its Google Play target age is declared as 13+ only, and it does not participate in the Families program.</li>
@@ -195,7 +194,7 @@ footer {
 <h2>6. Security Measures</h2>
 <ul>
 <li><strong>Data minimization</strong>: We do not collect information that is not essential to the service. Game data stays on your device and is never transmitted to a server of ours.</li>
-<li><strong>Transport protection</strong>: External communication for ads and payments uses the encrypted (HTTPS/TLS) channels provided by each SDK.</li>
+<li><strong>Transport protection</strong>: External communication for ads uses the encrypted (HTTPS/TLS) channels provided by the SDK.</li>
 <li><strong>Access control</strong>: Because we hold no user-identifying data, we operate no user database.</li>
 <li><strong>Maintenance</strong>: We keep the SDKs we depend on up to date with their security releases.</li>
 </ul>
